@@ -1,0 +1,281 @@
+body {
+    margin: 0;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.94rem;
+    color: #aaa;
+    background-color: #0e0e0e;
+}
+
+
+.bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 28vh;
+    margin-right: 28vh;
+    margin-top: 15px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbutton {
+    all: unset;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #5A2E98;
+    min-width: 140px;
+    box-shadow: 0px 7px 20px 12px rgba(0,0,0,0.75);
+    border-radius: 5px;
+    padding-top: 8px;
+    justify-content: center;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+.threelines {
+    fill: #fff;
+    transition: ease-out 100ms
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+    transition: ease-in 5s;
+}
+.dropdown:hover .threelines {
+    fill: #5A2E98;     
+}
+
+.dropdown-content a:hover {
+    background-color: #502a86; 
+}
+
+    /*---------------------user login-------------------*/
+
+.user {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    margin-left: 950px;
+    background-color:#5A2E98;
+    font-size: 1rem;
+    border-radius: 80px;
+    transition: ease-out 200ms;
+}
+
+
+.user:hover {
+    background-color: #502a86;
+    cursor: pointer;
+    transition: ease-in 100ms;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: 85px 0px 30px 0px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.icon {
+    background-color: #5a2e98;
+    padding: 20px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons {
+    color: #ffff;
+    padding: 8px 40px 8px 40px;
+    background-color: #5A2E98;
+    border-radius: 10px;
+    transition: ease-out 100ms;
+}
+.buttons:hover {
+    background-color: #502a86;
+    cursor: pointer;
+    transition: ease-in 100ms;
+}
+
+    /*Connect with us on twitter + svg*/
+
+#twitter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#icon {
+    fill: #a885da;
+}
+#twitter:hover .twitter{
+    color: #5A2E98;
+    cursor: pointer;
+}
+#twitter:hover #icon{
+    fill: #5A2E98;
+    cursor: pointer;
+}
+.twitter {
+    color: #a885da;
+}
+
+footer {
+    margin-top: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    text-align: left;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.buttons-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btns{
+    padding: 2px 10px 2px 10px;
+    margin: 5px;
+    background-color:#363636;
+    border-radius: 2px;
+    transition: ease-out 100ms;
+}  
+
+.btns:hover {
+    background-color: #5A2E98;
+    cursor: pointer;
+    transition: ease-in 100ms;
+}
+
+#btns {
+    background-color:#363636;
+    border-radius: 2px;
+    transition: ease-out 100ms;
+}
+
+#btns:hover {
+    background-color: #5A2E98;
+    cursor: pointer;
+    transition: ease-in 100ms;
+}
+
+.icons {
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    background-color: #666666;
+    width: 27px;
+    height: 27px;
+    padding: 2px;
+    border-radius: 2.5px;
+}
+.right {
+    margin-left: 200px; 
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    color: #666666;
+}
+
+#row {
+    display:flex; flex-direction:row; align-items: center;
+}
+
+/*----------slider here------------*/
+
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.switch {
+    position: absolute;
+    display: inline-block;
+    width: 24px;
+    height: 15px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #494949;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 11px;
+    width: 11px;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+
+  input:checked + .slider {
+    background-color: #5A2E98;
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(9px);
+    -ms-transform: translateX(9px);
+    transform: translateX(9px);
+  }
+
+#box {
+    padding-right: 8px; width: 24px; height: 15px;
+}
