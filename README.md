@@ -8,3 +8,4 @@ As the google search page clone was made using a step by step tutorial but this 
 
 This clone is not responsive at all cause I was not up to the level for learning responsiveness when I made this clone.
 But maybe in future I will try to make it responsive. Maybe.
+It uses the vanilla css for styling and has 0 javascript code behind for the working
