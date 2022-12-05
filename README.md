@@ -1,4 +1,6 @@
 ﻿# 9anime-clone
+ 
+ link - https://super-chebakia-4cbeba.netlify.app/
 
 This is a finished frontend project that I completed in 2nd year of my grad school
 
